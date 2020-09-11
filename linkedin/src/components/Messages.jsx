@@ -1,5 +1,9 @@
 import React from 'react';
 import io from 'socket.io-client';
+import Messenger from './Messenger.css'
+import Navbar from './NavBar'
+import ConversationList from '../components/ConversationList/index';
+import MessageList from '../components/MessageList/index';
 
 
 class Messages extends React.Component {
@@ -36,7 +40,19 @@ class Messages extends React.Component {
 
     render() {
         return (
-            <h1>Hello</h1>
+            <>
+                <Navbar />
+                <div className="messenger" style={{ background: "#f6f6f6" }}>
+                    <div className="scrollable sidebar">
+                        <ConversationList />
+                    </div>
+                    <div className="scrollable content">
+                        <MessageList />
+                    </div>
+                </div>
+
+
+            </>
 
         )
     }

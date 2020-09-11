@@ -5,7 +5,9 @@ export class Footer extends Component {
   render() {
     return (
       <Container className="containers">
-        <img src="assets/linkedin-logo.png" className="mt-4" />
+        <img className="img-fluid mt-4"
+          src="https://f.hubspotusercontent30.net/hubfs/2235233/blog-import/2020/20-08-Aug/sm-icons-linkedin-logo.png"
+        />
         <Row className="mt-4 flex-column">
           <div className="d-flex">
             <Col xs={2}>
